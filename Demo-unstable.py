@@ -28,7 +28,7 @@ class PostionCheck:
         if self.mx < self.width//2:
             return "left"
         else:
-            return "right"
+        return "right"
 
 
 class Page(QWebPage):
@@ -125,9 +125,6 @@ class MainScreen(QMainWindow):
         self.webview = WebView(Record.targeturl)
         self.ptoolwidget = QWidget()
         self.ptoolbar = self.addToolBar('工具栏')
-        # menubar = self.menuBar()
-        # self.fileMenu = menubar.addMenu('&File')
-        # self.fileMenu.addMenu('&History')
         statusbar = self.statusBar()
         self.initPageUI()
         self.setGeometry(50, 50, 1440, 960)
