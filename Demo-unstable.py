@@ -28,7 +28,7 @@ class PostionCheck:
         if self.mx < self.width//2:
             return "left"
         else:
-        return "right"
+            return "right"
 
 
 class Page(QWebPage):
